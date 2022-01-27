@@ -1,0 +1,25 @@
+/* COMMISSIONS */
+.commissions__text {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .commissions__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: flex-end;
+  }
+  .commissions__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .commissions__grid {
+    align-items: center;
+  }
+}

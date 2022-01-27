@@ -1,0 +1,43 @@
+/* SECURITY */
+.security {
+  background-color: var(--color-primary);
+  padding: 20rem 0;
+  position: relative;
+  overflow: hidden;
+  margin: 10rem 0;
+}
+
+.security::before,
+.security::after {
+  background-color: var(--color-white);
+  content: '';
+  height: 20rem;
+  width: 120%;
+  position: absolute;
+}
+
+.security::before {
+  top: -10rem;
+  left: -5rem;
+  transform: rotate(3deg);
+}
+
+.security::after {
+  bottom: -10rem;
+  left: -5rem;
+  transform: rotate(-3deg);
+}
+
+.security__heading {
+  color: var(--color-white);
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .security__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+}
